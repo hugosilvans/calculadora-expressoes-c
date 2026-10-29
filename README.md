@@ -36,3 +36,18 @@ Consulte [expressao.h](expressao.h) para as declarações e [expressao.c](expres
 ## Contexto
 
 Projeto de estudo. A implementação utiliza pilhas de tamanho fixo; entradas muito extensas e validação completa de expressões são pontos para evolução.
+
+## Limites e testes
+
+As funções rejeitam entradas com mais de 511 caracteres, evitando ultrapassar as pilhas de tamanho fixo. Entradas inválidas retornam `NAN` ou `NULL`, conforme a função.
+
+```bash
+gcc -std=gnu11 -Wall -Wextra -I. expressao.c tests/test_expressao.c -lm -o teste
+./teste
+```
+
+Os testes cobrem avaliação, conversão, divisão por zero, expressão incompleta e entrada longa. A conversão interna de infixa para pós-fixa continua preservada como material do exercício.
+
+## Guia do código
+
+Consulte [GUIA_CODIGO.md](GUIA_CODIGO.md) para localizar os módulos, entender as convenções e estudar as alterações.

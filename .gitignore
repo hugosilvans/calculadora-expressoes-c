@@ -1,3 +1,15 @@
 calculadora
 calculadora.exe
 *.o
+
+node_modules/
+__pycache__/
+*.py[cod]
+*.exe
+*.class
+**/target/
+.env
+.env.*
+!.env.example
+dist/
+.angular/
