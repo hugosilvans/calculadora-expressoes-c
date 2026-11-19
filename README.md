@@ -47,7 +47,3 @@ gcc -std=gnu11 -Wall -Wextra -I. expressao.c tests/test_expressao.c -lm -o teste
 ```
 
 Os testes cobrem avaliação, conversão, divisão por zero, expressão incompleta e entrada longa. A conversão interna de infixa para pós-fixa continua preservada como material do exercício.
-
-## Guia do código
-
-Consulte [GUIA_CODIGO.md](GUIA_CODIGO.md) para localizar os módulos, entender as convenções e estudar as alterações.
